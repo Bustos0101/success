@@ -1,0 +1,294 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+   color: #000;
+}
+li{
+ list-style: none;
+}
+.grid{
+  font-size: 19px;
+}
+#profile{
+  height: 36px;
+  width: 51px;
+  position: relative;
+  top: -1px;
+}
+.nav-left, .nav-right{
+  display: flex;
+  align-items: center;
+}
+.main-nav{
+  display:flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+/*   border-bottom: solid 1px #000; */
+  font-size: 15x;
+}
+.main-nav li{
+  margin: 0 10px;
+}
+.home-page{
+  width: 100%;
+  height: 350px;
+  text-align: center;
+}
+#logo{
+  width: 330px;
+  height: 225px;
+  display: block;
+  margin: auto;
+  position: relative;
+  z-index: -2;
+}
+.search-bar{
+  width: 600px;
+  height: 42px;
+  border-radius: 30px;
+  border: 2px solid lightgrey;
+  position: relative;
+  left: -15px;
+  top: -35px;
+  z-index: -1;
+
+}
+.search-icon {
+  position: relative;
+  color: #aba8a7;
+  left: 24px;
+  top: -34px;
+}
+.mic-icon {
+  position: relative;
+  color: #268ab5;
+  left: -55px;
+  font-size: 20px;
+  top: -32px;
+}
+.buttons{
+  width: auto;
+  height: auto;
+  margin-top: 5px;
+  
+}
+.buttons button{
+  height: 35px;
+  width: 143px;
+  background: #f7f7fc;
+  margin: 0 10px;
+  border: none;
+  color: #323233;
+  font-size: 14px;
+}
+.footer{
+  height: 50px;
+  width: 100%;
+  background: #f7f7fc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+.footer ul{
+  display: flex;
+}
+.footer-left{
+  margin-left: 33px;
+}
+.footer-right{
+  margin-right: 20px;
+}
+.footer ul li{
+  margin: 0 30px 0 0;
+}
+.footer ul li a {
+  color: #68686b;
+  font-size: 15.3px;
+}
+.footer-center i.leaf-icon{
+  margin-right: 6px;
+  color: #05a655;
+}
+.footer-center ul li a{
+  font-family: Arial;
+}
+.footer-center{
+  position: relative;
+  left: -40px;
+}
+.center-footer{
+  height: 50px;
+  width: 100%;
+  background: teal;
+  position: relative;
+/*   bottom: -1000px; */
+  display:none;
+}
+.grid0{
+  display: none;
+}
+.hamburger{
+  display: none;
+}
+.left-text{
+  display: none;
+}
+.nav-right .grid0{
+  display: none;
+}
+.nav-right .moblie-icon{
+  display: none;
+}
+/* responsive desgin */
+/* Tablet */
+@media(max-width: 800px){
+  .footer-center{
+    bottom: -150px;
+  }
+  .footer-left{
+    margin-left: 50px;
+    position: relative;
+    right:  -40px;
+  }
+  .footer-right{
+    margin-right: 50px;
+    position: relative;
+    right:  50px;
+
+  }
+  .footer ul li{
+    margin: 0 16px 0 0;
+  }
+  .center-footer{
+/*     bottom: 0; */
+/*     disp/lay: block; */
+  }
+  .nav-right .grid0{
+    display: none;
+  }
+}
+
+/* Surface DUO mode */
+@media screen and (max-width: 500px) and (max-height: 900px){
+  .search-bar{
+    width: 320px;
+  }
+  .footer{
+/*    positon: relative; */
+/*    bottom: 50px; */
+   
+  }
+  ul.footer-left{
+    display: none;
+  }
+  body{
+/*     display: non; */
+  }
+  
+}
+
+/* moblie */
+@media(max-width: 380px){
+  .search-bar{
+    width: 300px;
+  }
+  ul.footer-left{
+    display: none;
+  }
+  .buttons button{
+    position: relative;
+    left: -20px;
+    display: none;
+  }
+  .right-text{
+    display: none;
+  }
+  .nav-right .moblie-icon{
+    font-size: 26px;
+    position: relative;
+    left: 30px;
+    display: block;
+  }
+  #profile{
+      height: 44px;
+      width: 55px;
+      left: -15px;
+  }
+  .nav-right .grid0{
+    display: inline-block;
+    position: relative;
+    right: -25px;
+    font-size: 21px;
+    color: #000;
+    display: block;
+  }
+  .hamburger{
+    display: inline-block;
+    font-size: 19px;
+  }
+  .left-text{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15.2px;
+    color: grey;
+    font-family: Arial;
+  }  
+  .nav-left li:nth-child(3){
+    position: relative;
+    left: -11px;
+  }
+  .nav-left li:nth-child(2){
+/*     text-decoration: underline; */
+/*     text-underline-offset: 3px; */
+    border-bottom: 3px solid blue;
+    padding-bottom: 3px;
+    position: relative;
+    bottom: -3px;
+/*     margin-bottom: 4px; */
+  }
+  .left-text1{
+    display: none;
+  }
+}
+/* small-phone-version */
+@media(max-width: 320px){
+  .search-bar{
+    width: 260px;
+    position: relative;
+    left: -3px;
+  }
+  .main-nav{
+    padding: 15px 0px;
+  }
+  .nav-right{
+    position: relative;
+    left: -28px;
+  }
+  .mic-icon{
+    position: relative;
+    left: -38.5px;
+  }
+  .search-icon {
+    position: relative;
+    left: 36px;
+  }
+  .footer-right{
+    margin-right: 29px;
+  }
+}
+
+/* moblie-landscape-mode */
+@media(max-height: 400px){
+  .home-page{
+    position: relative;
+    top: -66px;
+  }
+  ul.footer-center{
+    display: none;
+  }
+}
