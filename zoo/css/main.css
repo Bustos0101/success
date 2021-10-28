@@ -50,24 +50,28 @@ li{
   height: 42px;
   border-radius: 30px;
   border: 2px solid lightgrey;
-  position: relative;
+/*   position: relative; */
+  margin-bottom: 15px;
   left: -15px;
-  top: -35px;
+  top: -5px;
   z-index: -1;
+  padding-left: 40px;
+  outline: none;
+
 
 }
 .search-icon {
   position: relative;
   color: #aba8a7;
-  left: 24px;
-  top: -34px;
+  left: 37px;
+  top: -1px;
 }
 .mic-icon {
   position: relative;
   color: #268ab5;
-  left: -55px;
+  left: -45px;
   font-size: 20px;
-  top: -32px;
+  top: 3px;
 }
 .buttons{
   width: auto;
